@@ -1,0 +1,2 @@
+# netgroups
+calamares netgroups

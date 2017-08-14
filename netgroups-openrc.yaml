@@ -347,6 +347,55 @@
         - gedit
         - gnome-terminal
         - blueberry
+  - name: 'i3'
+    description: 'i3 window manager'
+    selected: false
+    hidden: false
+    critical: false
+    packages:
+        - acpi
+        - artix-sddm-theme
+        - blueberry
+        - clipit
+        - compton
+        - dash
+        - dmenu
+        - dmidecode
+        - gsimplecal
+        - feh
+        - i3-wm
+        - i3blocks
+        - i3lock
+        - i3lock-wrapper
+        - i3status
+        - j4-dmenu-desktop
+        - lm_sensors
+        - network-manager-applet
+        - pcmanfm
+        - polkit
+        - powertop
+        - ranger
+        - sxiv
+        - screenfetch
+        - terminus-font
+        - termite
+        - tree
+        - ttf-bitstream-vera
+        - ttf-dejavu
+        - ttf-droid
+        - ttf-inconsolata
+        - ttf-indic-otf
+        - ttf-liberation
+        - vim
+        - w3m
+        - xdg-user-dirs
+        - xdg-utils
+        - xosd
+        - xorg-server
+        - xorg-twm
+        - xorg-xinit
+        - xorg-xrandr
+        - zathura
 
 - name: 'fonts'
   description: 'Fonts'

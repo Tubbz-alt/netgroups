@@ -195,20 +195,20 @@
   selected: false
   critical: false
   subgroups:
-    - name: "displaymanager"
-      description: "Displaymanager"
-      hidden: false
-      selected: false
-      critical: false
-      packages:
+  - name: "displaymanager"
+    description: "Displaymanager"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
         - displaymanager-openrc
         - artix-sddm-theme
-    - name: 'plasma'
-      description: 'plasma'
-      selected: false
-      hidden: false
-      critical: false
-      packages:
+  - name: 'plasma'
+    description: 'plasma'
+    selected: false
+    hidden: false
+    critical: false
+    packages:
         - bluedevil
         - breeze
         - breeze-gtk
@@ -250,12 +250,12 @@
         - systemsettings
         - user-manager
         - xdg-desktop-portal-kde
-    - name: 'kdebase'
-      description: 'kde base applications'
-      selected: false
-      hidden: false
-      critical: false
-      packages:
+  - name: 'kdebase'
+    description: 'kde base applications'
+    selected: false
+    hidden: false
+    critical: false
+    packages:
         - dolphin
         - kate
         - kdialog
@@ -265,12 +265,12 @@
         - konqueror
         - konsole
         - kwrite
-    - name: 'lxqt'
-      description: 'lxqt desktop'
-      selected: false
-      hidden: false
-      critical: false
-      packages:
+  - name: 'lxqt'
+    description: 'lxqt desktop'
+    selected: false
+    hidden: false
+    critical: false
+    packages:
         - lxqt-about
         - lxqt-admin
         - lxqt-common
@@ -307,12 +307,12 @@
         - gvfs-nfs
         - gvfs-smb
         - lxappearance
-    - name: 'cinnamon'
-      description: 'cinnamon desktop'
-      selected: false
-      hidden: false
-      critical: false
-      packages:
+  - name: 'cinnamon'
+    description: 'cinnamon desktop'
+    selected: false
+    hidden: false
+    critical: false
+    packages:
         - accountsservice
         - caribou
         - cinnamon-settings-daemon
@@ -347,12 +347,12 @@
         - gedit
         - gnome-terminal
         - blueberry
-    - name: 'i3'
-      description: 'i3 window manager'
-      selected: false
-      hidden: false
-      critical: false
-      packages:
+  - name: 'i3'
+    description: 'i3 window manager'
+    selected: false
+    hidden: false
+    critical: false
+    packages:
         - blueberry
         - clipit
         - compton

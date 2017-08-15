@@ -174,7 +174,7 @@
     packages:
         - xorg-server
   - name: "Xorg drivers"
-    description: "Xorg server"
+    description: "Xorg drivers"
     hidden: false
     selected: false
     critical: false
@@ -204,7 +204,7 @@
         - displaymanager-openrc
         - artix-sddm-theme
   - name: 'plasma'
-    description: 'plasma'
+    description: 'Kde plasma desktop'
     selected: false
     hidden: false
     critical: false
@@ -250,8 +250,8 @@
         - systemsettings
         - user-manager
         - xdg-desktop-portal-kde
-  - name: 'kdebase'
-    description: 'kde base applications'
+  - name: 'kdeapps'
+    description: 'Kde applications'
     selected: false
     hidden: false
     critical: false
@@ -265,8 +265,11 @@
         - konqueror
         - konsole
         - kwrite
+        - ark
+        - kwalletmanager
+        - okular
   - name: 'lxqt'
-    description: 'lxqt desktop'
+    description: 'Lxqt desktop'
     selected: false
     hidden: false
     critical: false
@@ -308,7 +311,7 @@
         - gvfs-smb
         - lxappearance
   - name: 'cinnamon'
-    description: 'cinnamon desktop'
+    description: 'Cinnamon desktop'
     selected: false
     hidden: false
     critical: false
@@ -383,7 +386,6 @@
         - xdg-user-dirs
         - xdg-utils
         - xosd
-        - xorg-server
         - xorg-twm
         - xorg-xinit
         - xorg-xrandr

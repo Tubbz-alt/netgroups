@@ -255,16 +255,16 @@
     selected: false
     hidden: false
     critical: false
-        packages:
-       - dolphin
-       - kate
-       - kdialog
-       - keditbookmarks
-       - kfind
-       - khelpcenter
-       - konqueror
-       - konsole
-       - kwrite
+    packages:
+        - dolphin
+        - kate
+        - kdialog
+        - keditbookmarks
+        - kfind
+        - khelpcenter
+        - konqueror
+        - konsole
+        - kwrite
   - name: 'lxqt'
     description: 'lxqt desktop'
     selected: false
@@ -353,8 +353,6 @@
     hidden: false
     critical: false
     packages:
-        - acpi
-        - artix-sddm-theme
         - blueberry
         - clipit
         - compton
@@ -380,12 +378,6 @@
         - terminus-font
         - termite
         - tree
-        - ttf-bitstream-vera
-        - ttf-dejavu
-        - ttf-droid
-        - ttf-inconsolata
-        - ttf-indic-otf
-        - ttf-liberation
         - vim
         - w3m
         - xdg-user-dirs

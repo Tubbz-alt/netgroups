@@ -44,7 +44,7 @@
         - man-db
         - man-pages
         - mdadm-openrc
-        - mkinitcpio
+        - mkinitcpio-openswap
         - nano
         - netifrc
         - openrc-settingsd

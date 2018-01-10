@@ -76,7 +76,7 @@
     selected: true
     critical: false
     packages:
-        - linux-lts
+        - linux
   - name: "boot"
     description: "Bootloader packages"
     hidden: true

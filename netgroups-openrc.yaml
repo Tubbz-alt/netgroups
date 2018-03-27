@@ -243,6 +243,7 @@
         - gvfs-nfs
         - gvfs-smb
         - lxappearance
+        - falkon
 
 - name: 'fonts'
   description: 'Fonts'

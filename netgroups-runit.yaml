@@ -1,0 +1,281 @@
+- name: "system"
+  description: "system"
+  hidden: false
+  selected: false
+  critical: false
+  subgroups:
+  - name: "base"
+    description: "Command line interface"
+    hidden: true
+    selected: true
+    critical: false
+    packages:
+        - bash
+        - bzip2
+        - coreutils
+        - cronie-runit
+        - cryptsetup-runit
+        - dbus-runit
+        - device-mapper-runit
+        - dhcpcd-runit
+        - diffutils
+        - e2fsprogs
+        - elogind-runit
+        - eudev-runit
+        - file
+        - filesystem
+        - findutils
+        - gawk
+        - gcc-libs
+        - gettext
+        - glibc-runit
+        - grep
+        - gzip
+        - inetutils-runit
+        - iproute2
+        - iputils
+        - jfsutils
+        - json-c
+        - less
+        - licenses
+        - logrotate
+        - lsb-release
+        - lvm2-runit
+        - man-db
+        - man-pages
+        - mdadm-runit
+        - mkinitcpio-openswap
+        - nano
+        - opensysusers
+        - opentmpfiles
+        - pacman
+        - pciutils
+        - pcmciautils
+        - perl
+        - procps-ng
+        - psmisc
+        - reiserfsprogs
+        - sed
+        - shadow
+        - s-nail
+        - sudo
+        - sysfsutils
+        - syslog-ng-runit
+        - tar
+        - texinfo
+        - usbutils
+        - util-linux
+        - vi
+        - which
+        - xfsprogs
+  - name: "kernel"
+    description: "Kernel packages"
+    hidden: true
+    selected: true
+    critical: false
+    packages:
+        - linux
+  - name: "boot"
+    description: "Bootloader packages"
+    hidden: true
+    selected: true
+    critical: false
+    packages:
+        - grub
+        - os-prober
+        - memtest86+
+        - efibootmgr
+        - dosfstools
+  - name: "network"
+    description: "Network packages"
+    hidden: false
+    selected: true
+    critical: false
+    packages:
+        - networkmanager-runit
+        - avahi-runit
+        - ntp-runit
+        - bluez-runit
+        - openssh-runit
+        - modemmanager
+        - nfs-utils-runit
+        - wpa_supplicant-runit
+  - name: "base-devel"
+    description: "Development packages assumed installed for making packages"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+        - autoconf
+        - automake
+        - binutils
+        - bison
+        - fakeroot
+        - flex
+        - gcc
+        - groff
+        - libtool
+        - m4
+        - make
+        - patch
+        - pkg-config
+  - name: "firmware"
+    description: "Firmware"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+        - bluez-firmware
+        - alsa-firmware
+        - b43-fwcutter
+        - ipw2100-fw
+        - ipw2200-fw
+        - zd1211-firmware
+  - name: 'filesystems'
+    description: 'Extra Filesystems'
+    selected: false
+    hidden: false
+    critical: false
+    packages:
+        - btrfs-progs
+        - ecryptfs-utils
+        - exfat-utils
+        - f2fs-tools
+        - ntfs-3g
+        - dmraid
+  - name: "apps"
+    description: "Utilities packages"
+    selected: false
+    hidden: false
+    critical: false
+    packages:
+        - artools-base
+        - acpi
+        - haveged-runit
+        - powertop
+        - dmidecode
+        - inxi
+        - acpid-runit
+        - rsync-runit
+
+- name: "Xorg"
+  description: "Xorg server"
+  hidden: false
+  selected: false
+  critical: false
+  subgroups:
+  - name: "Xorg base"
+    description: "Xorg server"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+        - xorg-server
+  - name: "Xorg drivers"
+    description: "Xorg drivers"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+        - xf86-video-amdgpu
+        - xf86-video-ati
+        - xf86-video-intel
+        - xf86-video-nouveau
+        - xf86-video-openchrome
+        - xf86-video-fbdev
+        - xf86-video-vesa
+        - xf86-video-vmware
+        - virtualbox-guest-modules-artix
+
+- name: "desktop"
+  description: "Desktop packages"
+  hidden: false
+  selected: false
+  critical: false
+  subgroups:
+  - name: "displaymanager"
+    description: "Displaymanager"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+        - artix-sddm-theme
+  - name: 'lxqt'
+    description: 'Lxqt desktop'
+    selected: false
+    hidden: false
+    critical: false
+    packages:
+        - lxqt-about
+        - lxqt-admin
+        - lxqt-config
+        - lxqt-globalkeys
+        - lxqt-notificationd
+        - lxqt-openssh-askpass
+        - lxqt-panel
+        - lxqt-policykit
+        - lxqt-powermanagement
+        - lxqt-qtplugin
+        - lxqt-runner
+        - lxqt-session
+        - lxqt-sudo
+        - lxqt-themes
+        - obconf-qt
+        - openbox
+        - pcmanfm-qt
+        - gvfs
+        - qterminal
+        - kwrite
+        - compton
+        - xarchiver
+        - network-manager-applet
+        - artix-lxqt-presets
+        - xdg-user-dirs
+        - xdg-utils
+        - lximage-qt
+        - vlc
+        - gvfs-afc
+        - gvfs-gphoto2
+        - gvfs-mtp
+        - gvfs-nfs
+        - gvfs-smb
+        - lxappearance
+        - falkon
+
+- name: 'fonts'
+  description: 'Fonts'
+  selected: false
+  hidden: false
+  critical: false
+  packages:
+       - terminus-font
+       - ttf-bitstream-vera
+       - ttf-dejavu
+       - ttf-droid
+       - ttf-inconsolata
+       - ttf-indic-otf
+       - ttf-liberation
+       - noto-fonts
+
+- name: 'audio'
+  description: 'Audio'
+  selected: false
+  hidden: false
+  critical: false
+  packages:
+        - pulseaudio
+        - pulseaudio-alsa
+        - pavucontrol-qt
+        - alsa-utils-openrc
+
+- name: 'printing'
+  description: 'Printing'
+  selected: false
+  hidden: false
+  critical: false
+  packages:
+        - bluez-cups
+        - cups-openrc
+        - cups-filters
+        - cups-pdf
+        - system-config-printer

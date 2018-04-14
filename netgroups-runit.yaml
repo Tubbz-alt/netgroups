@@ -14,14 +14,12 @@
         - bzip2
         - coreutils
         - cronie-runit
-        - cryptsetup-runit
         - dbus-runit
         - device-mapper-runit
         - dhcpcd-runit
         - diffutils
         - e2fsprogs
         - elogind-runit
-        - eudev-runit
         - file
         - filesystem
         - findutils
@@ -31,7 +29,6 @@
         - glibc-runit
         - grep
         - gzip
-        - inetutils-runit
         - iproute2
         - iputils
         - jfsutils
@@ -55,6 +52,7 @@
         - procps-ng
         - psmisc
         - reiserfsprogs
+        - runit-artix
         - sed
         - shadow
         - s-nail
@@ -266,7 +264,7 @@
         - pulseaudio
         - pulseaudio-alsa
         - pavucontrol-qt
-        - alsa-utils-openrc
+        - alsa-utils-runit
 
 - name: 'printing'
   description: 'Printing'
@@ -275,7 +273,7 @@
   critical: false
   packages:
         - bluez-cups
-        - cups-openrc
+        - cups-runit
         - cups-filters
         - cups-pdf
         - system-config-printer

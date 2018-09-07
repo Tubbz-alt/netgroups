@@ -43,8 +43,6 @@
         - mdadm-runit
         - mkinitcpio-openswap
         - nano
-        - opensysusers
-        - opentmpfiles
         - pacman
         - pciutils
         - pcmciautils
@@ -52,7 +50,7 @@
         - procps-ng
         - psmisc
         - reiserfsprogs
-        - runit-artix
+        - runit
         - sed
         - shadow
         - s-nail
@@ -66,6 +64,7 @@
         - vi
         - which
         - xfsprogs
+        - artix-sysvcompat
   - name: "kernel"
     description: "Kernel packages"
     hidden: true
@@ -116,7 +115,7 @@
         - m4
         - make
         - patch
-        - pkg-config
+        - pkgconf
   - name: "firmware"
     description: "Firmware"
     hidden: false
